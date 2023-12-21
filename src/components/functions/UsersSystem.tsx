@@ -13,7 +13,7 @@ const UserSystem: React.FC<Props> = ({ initialUsers }) => {
 
   const addUser = (name: string, email: string, role: UserRole) => {
     const newUser: User = {
-      id: Math.max(...users.map((user) => user.id)) + 1, // simple id generation
+      id: Math.max(...users.map((user) => user.id)) + 1, 
       name,
       email,
       role,
